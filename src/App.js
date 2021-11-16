@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Switch, Route } from "react-router-dom"
+import { BrowserRouter, Switch, Route,Link } from "react-router-dom"
 
 import Movies from './components/Movies'
 import Movie from './components/Movie'
@@ -7,7 +7,7 @@ import Movie from './components/Movie'
 export class App extends Component {
 
   notFound () {
-    return <h1>Error 404 <br /> Page not Found</h1>
+    return <h1>Error 404 <br /> Page not Found <br/> <Link to='/'><button>Home page</button></Link> </h1>
   }
 
   render() {
